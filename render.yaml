@@ -36,7 +36,7 @@ services:
       - key: SENDGRID_API_KEY
         sync: false
       - key: EMAIL_FROM
-        value: pricyjain95@gmail.com
+        value: siddharth.lampard@gmail.com
       - key: EMAIL_FROM_NAME
         value: Yume Yarns
       - key: CLIENT_URL           # your Netlify URL, e.g. https://stitchandbloom.netlify.app
