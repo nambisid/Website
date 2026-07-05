@@ -39,7 +39,7 @@ services:
         value: siddharth.lampard@gmail.com
       - key: EMAIL_FROM_NAME
         value: Yume Yarns
-      - key: CLIENT_URL           # your Netlify URL, e.g. https://stitchandbloom.netlify.app
-        sync: false
-      - key: CORS_ORIGIN          # same Netlify URL
-        sync: false
+      - key: CLIENT_URL           # your live site URL (update if you add a custom domain)
+        value: https://fluffy-crepe-70a6a6.netlify.app
+      - key: CORS_ORIGIN          # same site URL
+        value: https://fluffy-crepe-70a6a6.netlify.app
