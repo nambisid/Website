@@ -34,21 +34,13 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center">
+            {/* Logo is a full lockup (name + tagline), so no separate text beside it. */}
             <img
               src="/logo.png"
-              alt="Yume Yarns"
-              className="h-14 w-14 lg:h-16 lg:w-16 rounded-full object-cover"
-              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              alt="Yume Yarns — Dreams Woven in Every Loop"
+              className="h-12 lg:h-16 w-auto object-contain"
             />
-            <div className="flex flex-col leading-tight">
-              <span className="font-serif text-2xl lg:text-3xl text-brand-charcoal tracking-tight lowercase">
-                yume yarns
-              </span>
-              <span className="text-[10px] tracking-[0.2em] uppercase text-brand-warm-gray font-sans">
-                Dreams Woven in Every Loop
-              </span>
-            </div>
           </Link>
 
           {/* Desktop nav links */}
