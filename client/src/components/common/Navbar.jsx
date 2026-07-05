@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="Yume Yarns"
               className="h-11 w-11 lg:h-12 lg:w-12 rounded-full object-cover"
               onError={(e) => { e.currentTarget.style.display = 'none'; }}
