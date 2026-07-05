@@ -34,13 +34,22 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            {/* Logo is a full lockup (name + tagline), so no separate text beside it. */}
+          <Link to="/" className="flex items-center gap-2">
+            {/* mix-blend-multiply makes the logo's light background blend into the
+                cream navbar, hiding the box without needing a transparent file. */}
             <img
               src="/logo.png"
-              alt="Yume Yarns — Dreams Woven in Every Loop"
-              className="h-12 lg:h-16 w-auto object-contain"
+              alt="Yume Yarns"
+              className="h-12 lg:h-14 w-auto object-contain mix-blend-multiply"
             />
+            <div className="flex flex-col leading-tight">
+              <span className="font-serif text-2xl lg:text-3xl text-brand-charcoal tracking-tight lowercase">
+                yume yarns
+              </span>
+              <span className="text-[10px] tracking-[0.2em] uppercase text-brand-warm-gray font-sans">
+                Dreams Woven in Every Loop
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav links */}
