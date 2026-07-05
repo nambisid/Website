@@ -1,0 +1,45 @@
+# Render blueprint for the Stitch & Bloom API (Express + MongoDB).
+# Render → New → Blueprint → point at this repo to create the service.
+# Secrets are set in the Render dashboard (sync: false = not committed here).
+
+services:
+  - type: web
+    name: stitch-and-bloom-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Render provides PORT automatically — server.js already reads process.env.PORT.
+      - key: MONGODB_URI          # MongoDB Atlas connection string
+        sync: false
+      - key: JWT_SECRET           # long random string
+        sync: false
+      - key: JWT_ACCESS_EXPIRY
+        value: 15m
+      - key: JWT_REFRESH_EXPIRY
+        value: 7d
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: SENDGRID_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        value: orders@stitchandbloom.com
+      - key: EMAIL_FROM_NAME
+        value: Stitch & Bloom
+      - key: CLIENT_URL           # your Netlify URL, e.g. https://stitchandbloom.netlify.app
+        sync: false
+      - key: CORS_ORIGIN          # same Netlify URL
+        sync: false
