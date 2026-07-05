@@ -52,7 +52,7 @@ const RegisterPage = () => {
     try {
       const { confirmPassword, ...userData } = form;
       await register(userData);
-      toast.success('Welcome to Stitch & Bloom!');
+      toast.success('Welcome to Yume Yarns!');
       navigate('/');
     } catch (error) {
       toast.error(error.response?.data?.message || 'Registration failed');
@@ -66,7 +66,7 @@ const RegisterPage = () => {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-serif mb-2">Create Account</h1>
-          <p className="text-brand-warm-gray">Join the Stitch & Bloom family</p>
+          <p className="text-brand-warm-gray">Join the Yume Yarns family</p>
         </div>
 
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-brand-linen p-8">

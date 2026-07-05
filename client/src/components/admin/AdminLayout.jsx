@@ -60,7 +60,7 @@ const AdminLayout = () => {
         <div className="px-6 py-6 border-b border-brand-linen">
           <Link to="/admin" className="block">
             <div className="font-serif text-xl text-brand-charcoal leading-tight">
-              Stitch & Bloom
+              Yume Yarns
             </div>
             <div className="text-[10px] tracking-[0.3em] uppercase text-brand-blush-dark font-sans mt-0.5">
               Admin Console

@@ -136,7 +136,7 @@ const CheckoutPage = () => {
         amount,
         currency,
         order_id: orderId,
-        name: 'Stitch & Bloom',
+        name: 'Yume Yarns',
         description: 'Handmade crochet order',
         prefill: {
           name: user ? `${user.firstName} ${user.lastName}` : '',

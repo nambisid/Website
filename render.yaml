@@ -36,9 +36,9 @@ services:
       - key: SENDGRID_API_KEY
         sync: false
       - key: EMAIL_FROM
-        value: orders@stitchandbloom.com
+        value: orders@yumeyarns.com
       - key: EMAIL_FROM_NAME
-        value: Stitch & Bloom
+        value: Yume Yarns
       - key: CLIENT_URL           # your Netlify URL, e.g. https://stitchandbloom.netlify.app
         sync: false
       - key: CORS_ORIGIN          # same Netlify URL

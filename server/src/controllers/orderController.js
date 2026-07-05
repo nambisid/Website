@@ -8,7 +8,7 @@ const catchAsync = require('../utils/catchAsync');
 const generateOrderNumber = () => {
   const date = new Date().toISOString().slice(0, 10).replace(/-/g, '');
   const suffix = uuidv4().slice(0, 4).toUpperCase();
-  return `SB-${date}-${suffix}`;
+  return `YY-${date}-${suffix}`;
 };
 
 // @desc    Place a new order

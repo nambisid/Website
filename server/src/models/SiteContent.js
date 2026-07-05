@@ -76,7 +76,7 @@ const siteContentSchema = new mongoose.Schema(
       default: [
         { title: 'Handmade', description: 'Every piece crafted by hand', icon: '✋' },
         { title: 'Secure Checkout', description: 'SSL encrypted payment', icon: '🔒' },
-        { title: 'Free Shipping', description: 'On orders over $50', icon: '📦' },
+        { title: 'Free Shipping', description: 'On orders over ₹999', icon: '📦' },
         { title: 'Made to Last', description: 'Premium quality yarns', icon: '✨' },
       ],
     },
@@ -90,7 +90,7 @@ const siteContentSchema = new mongoose.Schema(
     aboutLead: {
       type: String,
       default:
-        'Stitch & Bloom was born from a simple love of yarn and the people we make for.',
+        'Yume Yarns was born from a simple love of yarn and the people we make for.',
       maxlength: 400,
     },
     aboutParagraphs: {
@@ -105,7 +105,7 @@ const siteContentSchema = new mongoose.Schema(
     aboutFounderQuote: { type: String, default: '', maxlength: 400 },
 
     // Contact / footer
-    contactEmail: { type: String, default: 'hello@stitchandbloom.com', maxlength: 200 },
+    contactEmail: { type: String, default: 'hello@yumeyarns.com', maxlength: 200 },
     socialInstagram: { type: String, default: '', maxlength: 200 },
     socialPinterest: { type: String, default: '', maxlength: 200 },
   },

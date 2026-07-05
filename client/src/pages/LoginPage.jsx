@@ -31,7 +31,7 @@ const LoginPage = () => {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-serif mb-2">Welcome Back</h1>
-          <p className="text-brand-warm-gray">Sign in to your Stitch & Bloom account</p>
+          <p className="text-brand-warm-gray">Sign in to your Yume Yarns account</p>
         </div>
 
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-brand-linen p-8">

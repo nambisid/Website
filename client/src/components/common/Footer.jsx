@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <h3 className="font-serif text-2xl text-white mb-3">Stitch & Bloom</h3>
+            <h3 className="font-serif text-2xl text-white mb-3">Yume Yarns</h3>
             <p className="text-sm text-brand-warm-gray leading-relaxed">
               Handmade with love, one stitch at a time. Every piece tells a story of care, creativity, and craftsmanship.
             </p>
@@ -58,7 +58,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-sm text-brand-warm-gray">
-            &copy; {new Date().getFullYear()} Stitch & Bloom. All rights reserved. Made with care.
+            &copy; {new Date().getFullYear()} Yume Yarns. All rights reserved. Made with care.
           </p>
         </div>
       </div>

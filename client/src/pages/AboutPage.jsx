@@ -20,13 +20,13 @@ const AboutPage = () => {
     ? c.aboutParagraphs
     : [
         {
-          text: "Stitch & Bloom was born from a simple love for the craft of crochet and a belief that handmade items carry a warmth that mass-produced goods never can.",
+          text: "Yume Yarns was born from a simple love for the craft of crochet and a belief that handmade items carry a warmth that mass-produced goods never can.",
         },
         {
           text: 'Every piece in our collection is meticulously handcrafted using premium yarns sourced for their softness, durability, and beautiful color. From adorable amigurumi friends to cozy blankets and stylish accessories, each creation is a labor of love.',
         },
         {
-          text: "We believe in slow fashion — taking the time to create something beautiful, something that will be treasured for years to come. When you purchase from Stitch & Bloom, you're not just buying a product; you're supporting handmade artisanship.",
+          text: "We believe in slow fashion — taking the time to create something beautiful, something that will be treasured for years to come. When you purchase from Yume Yarns, you're not just buying a product; you're supporting handmade artisanship.",
         },
       ];
 

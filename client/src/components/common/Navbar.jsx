@@ -35,12 +35,18 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex flex-col items-center leading-tight">
-              <span className="font-serif text-2xl lg:text-3xl text-brand-charcoal tracking-tight">
-                Stitch & Bloom
+            <img
+              src="/logo.png"
+              alt="Yume Yarns"
+              className="h-11 w-11 lg:h-12 lg:w-12 rounded-full object-cover"
+              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="font-serif text-2xl lg:text-3xl text-brand-charcoal tracking-tight lowercase">
+                yume yarns
               </span>
-              <span className="text-[10px] tracking-[0.3em] uppercase text-brand-warm-gray font-sans">
-                Handmade Crochet
+              <span className="text-[10px] tracking-[0.2em] uppercase text-brand-warm-gray font-sans">
+                Dreams Woven in Every Loop
               </span>
             </div>
           </Link>
