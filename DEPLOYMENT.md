@@ -42,7 +42,7 @@ Payments use **Razorpay** (cards, UPI, Google Pay, PhonePe, net banking), in ₹
 5. Health check: open `https://<that-url>/api/v1/health` → should return `{"status":"ok"}`.
 6. (Optional) Seed sample products: Render → Shell → `node seed.js`.
 
-> Free tier sleeps after 15 min idle, so the first request after a nap takes ~30–50s. Fine for launch; upgrade later if you want it always-on.
+> The server has a built-in keep-alive: it pings itself every 14 min (using Render's `RENDER_EXTERNAL_URL`) so the free tier never sleeps — no cold-start wait for customers. To make it truly guaranteed, upgrade to Render's Starter plan (~$7/mo) later.
 
 ## 4. Frontend on Netlify
 

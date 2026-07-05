@@ -1,10 +1,10 @@
-# Render blueprint for the Stitch & Bloom API (Express + MongoDB).
+# Render blueprint for the Yume Yarns API (Express + MongoDB).
 # Render → New → Blueprint → point at this repo to create the service.
 # Secrets are set in the Render dashboard (sync: false = not committed here).
 
 services:
   - type: web
-    name: stitch-and-bloom-api
+    name: yume-yarns-api
     runtime: node
     plan: free
     rootDir: server
