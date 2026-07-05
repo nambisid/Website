@@ -28,6 +28,10 @@ const calculateCartTotal = async (userId) => {
 // @desc    Create a Razorpay order (amount is authoritative, computed server-side)
 // @route   POST /api/v1/payments/razorpay/create-order
 exports.createRazorpayOrder = catchAsync(async (req, res) => {
+  if (!razorpay) {
+    throw new ApiError(503, 'Payments are not configured yet. Please try again later.');
+  }
+
   const { total } = await calculateCartTotal(req.user._id);
 
   const order = await razorpay.orders.create({
@@ -51,6 +55,10 @@ exports.createRazorpayOrder = catchAsync(async (req, res) => {
 // @desc    Verify a completed Razorpay payment's signature before the order is recorded
 // @route   POST /api/v1/payments/razorpay/verify
 exports.verifyRazorpayPayment = catchAsync(async (req, res) => {
+  if (!razorpay) {
+    throw new ApiError(503, 'Payments are not configured yet.');
+  }
+
   const { razorpayOrderId, razorpayPaymentId, razorpaySignature } = req.body;
 
   if (!razorpayOrderId || !razorpayPaymentId || !razorpaySignature) {
