@@ -21,12 +21,12 @@ const seedDB = async () => {
     const admin = await User.create({
       firstName: 'Admin',
       lastName: 'User',
-      email: 'admin@stitchandbloom.com',
+      email: 'admin@yumeyarns.com',
       password: 'Admin@123!',
       role: 'admin',
       isEmailVerified: true,
     });
-    console.log('Admin user created: admin@stitchandbloom.com / Admin@123!');
+    console.log('Admin user created: admin@yumeyarns.com / Admin@123!');
 
     // Create test customer
     await User.create({
